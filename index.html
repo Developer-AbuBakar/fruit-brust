@@ -9,6 +9,10 @@
       rel="stylesheet"
       type="text/css"
     />
+    <!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/55cf32542c.js" crossorigin="anonymous"></script>
+
+
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
@@ -79,7 +83,7 @@
                 class="rounded-3xl md:pl-6 lg:p-2 lg:m-2 lg:w-72 lg:pl-6 lg:p-2 lg:m-2 lg:w-72 text-[#121212]"
                 type="text"
                 placeholder="search here"/>
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class=" relative fa-solid fa-magnifying-glass"></i>
               
             </div>
           </div>
@@ -87,82 +91,70 @@
       </nav>
 
       <!-- banner section -->
-      <section class="mt-10 ">
-        <div>
-          <div class="carousel  w-full">
-            <!-- First  -->
-            <div id="slide1" class="carousel-item  -mt-52 relative w-full  bg-opacity-60">
-              <img
-                class="bg-[#121212] "
-                src="./images/banner1.png"
-                class="w-full"
-              />
-              <div
-                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-40 md:top-56 lg:top-96"
-              >
-                <a href="#slide4" class="btn btn-circle">❮</a>
-                <div class="absolute text-center  top-[30%] left-[10%] right-[10%] ">
-                  <h3 class="text-7xl text-white">Exotic tastes at your <br> doorstep</h3>
-                  <p class="text-white mt-2 ">We supply highly quality organic products</p>
-                  <center>
-                    <button class="btn block  text-white mt-5 bg-[#F85559;] border-none">Shop All</button>
-                  </center>
-                </div>
-
-                <a href="#slide2" class="btn btn-circle">❯</a>
+      <section class="mt-10">
+        <div class="carousel w-full ">
+          <!-- 1st slied -->
+          <div id="slide1" class="carousel-item relative w-full ">
+            <img src="images/banner1.png" class="w-full" />
+            <div class="absolute rounded-lg w-full h-full bg-opacity-40 bg-[#121212]"></div>
+            <div class="absolute flex justify-around items-center transform -translate-y-1/2 left-5 right-5 top-1/2  ">
+              <div class="text-center">
+                <h2  class=" text-center font-lato font-extrabold text-sm md:text-3xl md:mt-20  lg:text-5xl text-white">Exotic tastes at your <br> doorstep</h2>
+                <p class="lg:mt-5 font-medium font-lato text-sm lg:text-lg text-center text-white">We supply highly quality organic products</p>
+                <button class="btn block hover:bg-green-700  bg-[#F85559] text-white border-none text-center md:ml-16 mt-2 lg:mt-5 ml-16 lg:ml-36 ">Shop Now</button>
               </div>
             </div>
-            <!-- Second  -->
-            <div id="slide2" class="carousel-item relative w-full  bg-opacity-60">
-              <img src="./images/banner2.png" class="w-full" />
-              <div
-                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-40 md:top-56 lg:top-96"
-              >
-                <a href="#slide1" class="btn btn-circle">❮</a>
-                <div class="absolute text-center top-[30%] left-[10%] right-[10%] ">
-                  <h3 class="text-7xl text-white">Exotic tastes at your <br> doorstep</h3>
-                  <p class="text-white mt-2 ">We supply highly quality organic products</p>
-                  <center>
-                    <button class="btn block  text-white mt-5 bg-[#F85559;] border-none">Shop All</button>
-                  </center>
-                </div>
-
-                <a href="#slide3" class="btn btn-circle">❯</a>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-1.5 right-3 md:left-5 md:right-5 lg:left-5 lg:right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+           <!--2nd slied  -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="images/banner2.png" class="w-full" />
+            <div class="absolute rounded-lg w-full h-full bg-opacity-40 bg-[#121212]"></div>
+            <div class="absolute flex justify-around items-center transform -translate-y-1/2 left-5 right-5 top-1/2  ">
+              <div class="text-center">
+                <h2  class=" text-center font-lato font-extrabold text-sm md:text-3xl md:mt-20  lg:text-5xl text-white">Exotic tastes at your <br> doorstep</h2>
+                <p class="lg:mt-5 font-medium font-lato text-sm lg:text-lg text-center text-white">We supply highly quality organic products</p>
+                <button class="btn block hover:bg-green-700  bg-[#F85559] text-white border-none text-center md:ml-16 mt-2 lg:mt-5 ml-16 lg:ml-36 ">Shop Now</button>
               </div>
             </div>
-            <!-- Third -->
-            <div id="slide3" class="carousel-item relative w-full  bg-opacity-60">
-              <img src="./images/banner3.png" class="w-full" />
-              <div
-                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-40 md:top-56 lg:top-96"
-              >
-                <a href="#slide2" class="btn btn-circle">❮</a>
-                <div class="absolute text-center top-[30%] left-[10%] right-[10%] ">
-                  <h3 class="text-7xl text-white">Exotic tastes at your <br> doorstep</h3>
-                  <p class="text-white mt-2 ">We supply highly quality organic products</p>
-                  <center>
-                    <button class="btn block  text-white mt-5 bg-[#F85559;] border-none">Shop All</button>
-                  </center>
-                </div>
-                <a href="#slide4" class="btn btn-circle">❯</a>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-1.5 right-3 md:left-5 md:right-5 lg:left-5 lg:right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <!-- 3rd slied -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <div class="absolute rounded-lg w-full h-full bg-opacity-40 bg-[#121212]"></div>
+            <img src="images/banner3.png" class="w-full" />
+            <div class="absolute flex justify-around items-center transform -translate-y-1/2 left-5 right-5 top-1/2  ">
+              <div class="text-center">
+                <h2  class=" text-center font-lato font-extrabold text-sm md:text-3xl md:mt-20  lg:text-5xl text-white">Exotic tastes at your <br> doorstep</h2>
+                <p class="lg:mt-5 font-medium font-lato text-sm lg:text-lg text-center text-white">We supply highly quality organic products</p>
+                <button class="btn block hover:bg-green-700 bg-[#F85559] text-white border-none text-center md:ml-16 mt-2 lg:mt-5 ml-16 lg:ml-36 ">Shop Now</button>
               </div>
             </div>
-            <!-- Fourth -->
-            <div id="slide4" class="carousel-item relative w-full  bg-opacity-60">
-              <img src="./images/banner4.png" class="w-full" />
-              <div
-                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-40 md:top-56 lg:top-96"
-              >
-                <a href="#slide3" class="btn btn-circle">❮</a>
-                <div class="absolute text-center top-[30%] left-[10%] right-[10%] ">
-                  <h3 class="text-7xl mb-20 text-white">Exotic tastes at your <br> doorstep</h3>
-                  <p class="text-white mt-2 ">We supply highly quality organic products</p>
-                  <center>
-                    <button class="btn block  text-white mt-5 bg-[#F85559;] border-none">Shop All</button>
-                  </center>
-                </div>
-                <a href="#slide1" class="btn btn-circle">❯</a>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-1.5 right-3 md:left-5 md:right-5 lg:left-5 lg:right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <!-- 4th slide -->
+          <div id="slide4" class="carousel-item relative w-full">
+            <div class="absolute rounded-lg w-full h-full bg-opacity-40 left-0 bg-[#121212]"></div>
+            <img src="images/banner4.png" class="w-full" />
+            <div class="absolute flex justify-around items-center transform -translate-y-1/2 left-5 right-5 top-1/2  ">
+              <div class="text-center">
+                <h2  class=" text-center font-lato font-extrabold text-sm md:text-3xl md:mt-20  lg:text-5xl text-white">Exotic tastes at your <br> doorstep</h2>
+                <p class="lg:mt-5 font-medium font-lato text-sm lg:text-lg text-center text-white">We supply highly quality organic products</p>
+                <button class="btn block hover:bg-green-700 bg-[#F85559] text-white border-none text-center md:ml-16 mt-2 lg:mt-5 ml-16 lg:ml-36 ">Shop Now</button>
               </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-1.5 right-3 md:left-5 md:right-5 lg:left-5 lg:right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
             </div>
           </div>
         </div>
@@ -251,7 +243,7 @@
 
       <!-- Deal of the day -->
       <section>
-        <!-- Content -->
+        
         <div class="flex flex-col lg:flex-row justify-between p-5 " >
     
           <div class="mt-10">
@@ -785,22 +777,109 @@
 <br>
 <br>
 
-      <!-- Why Choose Us section -->
-      <section>
-        <h1 class="text-5xl font-bold text-center">Why Choose Us</h1>
-        <p class="text-xl text-[#121212] mt-10 text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of 
-            classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+
+<!-- Choose Us section -->
+<section>
+  <div class="mt-10 text-center">
+    <h2 class="font-abold text-4xl">Why Choose Us</h2>
+    <p class="lg:ml-96 mt-5 lg:w-[50%] text-[#777] font-sm lg:font-normal ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+  </div>
+  <div class="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-10">
+    
+
+
+    <div class="grid grid-cols-1 justify-start">
+      
+      <div class=" lg:ml-5 flex flex-col justify-center items-center lg:flex-row gap-5">
+       <i class="fa-solid fa-user-plus text-gray-950 mt-2 pl-5 lg:pl-3 pt-3 w-16 h-10 rounded-full bg-slate-300"></i>
         <div>
-          <div>
-            
-          </div>
-
-
-
-          <div></div>
-          <div></div>
+          <h4 class=" text-center lg:text-left font-bold text-lg">Dedicated Team</h4>
+          <hr class=" mt-2 ml-10 mr-10 lg:ml-0 lg:mr-52 border-gray-400">
+          <p class="text-[#777] text-center lg:text-left text-sm mt-2">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
         </div>
-      </section>
+      </div>
+
+      
+    
+
+      <div class="lg:ml-5 flex flex-col justify-center items-center lg:flex-row gap-5">
+        <i class=" text-gray-950 mt-2 pl-5 lg:pl-3 pt-3 w-16 h-10 rounded-full bg-slate-300"></i>
+        <div>
+          <h4 class="text-center lg:text-left font-bold text-lg">Fresh is Best</h4>
+          <hr class="mt-2 ml-10 mr-10 lg:ml-0 lg:mr-52 border-gray-400">
+          <p class="text-[#777] text-center lg:text-left text-sm mt-2">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+        </div>
+
+        
+
+
+
+      </div>
+      <div class="lg:ml-5 flex flex-col justify-center items-center lg:flex-row gap-5">
+        <i class="fa-solid fa-gift text-gray-950 mt-2 pl-5 lg:pl-3 pt-3 w-16 h-10 rounded-full bg-slate-300"></i>
+        <div>
+          <h4 class="text-center lg:text-left font-bold text-lg">Gift Certificates</h4>
+          <hr class="mt-2 ml-10 mr-10 lg:ml-0 lg:mr-52 border-gray-400">
+          <p class="text-[#777] text-center lg:text-left text-sm mt-2">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+        </div>
+      </div>
+    </div>
+    
+    
+
+    
+    
+    <div class="p-4 md:p-32 lg:p-0 mt-5 mb-5">
+      <img src="images/whychoose1.png" alt="">
+    </div>
+
+
+
+    
+    <div class="grid grid-cols-1  lg:justify-start">
+      
+      <div class="lg:ml-5 flex flex-col justify-center items-center  lg:flex-row-reverse gap-5 ">
+        <i class="fa-brands fa-apple text-gray-950 mt-2 pl-6 lg:pl-4 pt-3 w-16 h-10 rounded-full bg-slate-300"></i>
+        <div>
+          <h4 class="text-center lg:text-end font-bold  text-lg">Integrated Supplier</h4>
+          <hr class="mt-2 ml-10 mr-10 lg:ml-44 lg:mr-0 border-gray-400">
+          <p class="text-[#777] text-center lg:text-end text-sm mt-2">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+        </div>
+      </div>
+
+      
+
+
+      <div class="lg:ml-5 flex flex-col justify-center items-center  lg:flex-row-reverse gap-5">
+        <i class="fa-solid fa-ice-cream text-gray-950 mt-2 pl-6 lg:pl-4 pt-3 w-16 h-10 rounded-full bg-slate-300"></i>
+        <div>
+          <h4 class="text-center lg:text-end font-bold  text-lg">Sustainable Practice</h4>
+          <hr class="mt-2 ml-10 mr-10 lg:ml-44 lg:mr-0 border-gray-400">
+          <p class="text-[#777] text-center lg:text-end text-sm mt-2">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+        </div>
+
+        
+
+
+      </div>
+      <div class="lg:ml-5 flex flex-col justify-center items-center  lg:flex-row-reverse gap-5">
+        <i class="fa-solid fa-thumbs-up text-gray-950 mt-2 pl-6 lg:pl-4 pt-3 w-16 h-10 rounded-full bg-slate-300"></i>
+        <div>
+          <h4 class="text-center lg:text-end font-bold  text-lg">The Benefits Only</h4>
+          <hr class="mt-2 ml-10 mr-10 lg:ml-44 lg:mr-0 border-gray-400">
+          <p class="text-[#777] text-center lg:text-end text-sm mt-2 mb-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+
+      
     </main>
 
     <!-- footer section -->
